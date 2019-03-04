@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="9.0.4" class="java.beans.XMLDecoder">
+ <object class="java.util.HashMap">
+  <void method="put">
+   <int>0</int>
+   <string>Comment 1 </string>
+  </void>
+  <void method="put">
+   <null/>
+   <string>comment squidward</string>
+  </void>
+  <void method="put">
+   <int>13</int>
+   <string>comment squidward</string>
+  </void>
+  <void method="put">
+   <int>15</int>
+   <string>comment trumpedited</string>
+  </void>
+ </object>
+</java>

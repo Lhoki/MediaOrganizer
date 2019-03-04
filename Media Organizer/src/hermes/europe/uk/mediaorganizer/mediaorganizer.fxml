@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="gridPaneID" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hermes.europe.uk.mediaorganizer.Controller.MediaOrganizerController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="530.0" minWidth="0.0" prefWidth="6.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="548.9999847412109" minWidth="10.0" prefWidth="328.33331298828125" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="794.0" minWidth="0.0" prefWidth="6.666656494140625" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="994.0" minWidth="10.0" prefWidth="736.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="794.0" minWidth="1.0" prefWidth="5.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints />
+    <RowConstraints maxHeight="368.0" minHeight="10.0" prefHeight="41.33333206176758" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="138.0" minHeight="0.0" prefHeight="38.66666793823242" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="302.0" minHeight="10.0" prefHeight="120.66665649414062" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="302.0" minHeight="10.0" prefHeight="99.33334350585938" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="302.0" minHeight="10.0" prefHeight="183.66665649414062" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="302.0" minHeight="10.0" prefHeight="28.66668701171875" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="302.0" minHeight="3.333343505859375" prefHeight="84.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="320.6666564941406" minHeight="0.0" prefHeight="5.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="320.6666564941406" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="320.6666564941406" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TitledPane animated="false" collapsible="false" prefHeight="165.0" prefWidth="327.0" text="Filetypes" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="2">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="137.0" prefWidth="326.0">
+               <children>
+                  <TitledPane animated="false" collapsible="false" prefHeight="79.0" prefWidth="139.0" text="AUDIO">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="53.0" prefWidth="140.0">
+                           <children>
+                              <CheckBox fx:id="mp3TickBox" graphicTextGap="0.0" layoutX="4.0" layoutY="1.0" mnemonicParsing="false" onAction="#mp3TickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".MP3">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="aacTicketBox" graphicTextGap="0.0" layoutX="4.0" layoutY="27.0" mnemonicParsing="false" onAction="#aacTicketBoxAction" prefHeight="26.0" prefWidth="69.0" text=".AAC">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="ogaTickBox" graphicTextGap="0.0" layoutX="74.0" layoutY="27.0" mnemonicParsing="false" onAction="#ogaTickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".OGA">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="mpaTickBox" graphicTextGap="0.0" layoutX="74.0" layoutY="1.0" mnemonicParsing="false" onAction="#mpaTickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".MPA">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane animated="false" collapsible="false" layoutX="138.0" prefHeight="79.0" prefWidth="188.0" text="VIDEO">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="53.0" prefWidth="184.0">
+                           <children>
+                              <CheckBox fx:id="mp4TickBox" graphicTextGap="0.0" layoutX="4.0" layoutY="1.0" mnemonicParsing="false" onAction="#mp4TickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".MP4">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="aviTickBox" graphicTextGap="0.0" layoutX="4.0" layoutY="27.0" mnemonicParsing="false" onAction="#aviTickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".AVI">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="webmTickBox" graphicTextGap="0.0" layoutX="61.0" layoutY="27.0" mnemonicParsing="false" onAction="#webmTickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".WEBM">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="flvTickBox" graphicTextGap="0.0" layoutX="61.0" layoutY="1.0" mnemonicParsing="false" onAction="#flvTickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".FLV">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="oggTickBox" graphicTextGap="0.0" layoutX="130.0" layoutY="27.0" mnemonicParsing="false" onAction="#oggTickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".OGG">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="movTickBox" graphicTextGap="0.0" layoutX="130.0" layoutY="1.0" mnemonicParsing="false" onAction="#movTickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".MOV">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane animated="false" collapsible="false" layoutY="78.0" prefHeight="55.0" prefWidth="326.0" text="IMAGES">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <CheckBox fx:id="jpegTickBox" graphicTextGap="0.0" layoutX="15.0" layoutY="1.0" mnemonicParsing="false" onAction="#jpegTickBoxAction" prefHeight="26.0" prefWidth="69.0" text="..JPEG">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="pngTickBox" graphicTextGap="0.0" layoutX="90.0" layoutY="1.0" mnemonicParsing="false" onAction="#pngTickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".PNG">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="gifTickBox" graphicTextGap="0.0" layoutX="167.0" layoutY="1.0" mnemonicParsing="false" onAction="#gifTickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".GIF">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="tiffTickBox" graphicTextGap="0.0" layoutX="241.0" layoutY="1.0" mnemonicParsing="false" onAction="#tiffTickBoxAction" prefHeight="26.0" prefWidth="69.0" text=".TIFF">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </TitledPane>
+               </children>
+            </AnchorPane>
+        </content>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TitledPane>
+      <TitledPane animated="false" collapsible="false" prefHeight="125.0" prefWidth="736.0" text="Playlists" GridPane.columnIndex="3" GridPane.rowIndex="6" GridPane.rowSpan="2">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="addSelectedToPlaylist" layoutX="157.0" layoutY="8.0" mnemonicParsing="false" onAction="#addSelectedToPlaylistAction" prefHeight="34.0" prefWidth="174.0" text="Add Selected To Playlist" />
+                  <ComboBox fx:id="playlistDropDown" layoutX="4.0" layoutY="8.0" prefHeight="34.0" prefWidth="149.0" promptText="Songs" />
+                  <Button fx:id="deleteFromPlaylistButton" layoutX="157.0" layoutY="47.0" mnemonicParsing="false" onAction="#deleteFromPlaylistButtonAction" prefHeight="35.0" prefWidth="174.0" text="Delete From Playlist" />
+                  <Button fx:id="savePlaylistButton" layoutX="639.0" layoutY="10.0" mnemonicParsing="false" onAction="#savePlaylistButtonAction" prefHeight="32.0" prefWidth="92.0" text="Save Playlist" />
+                  <Button fx:id="loadPlaylistButton" layoutX="639.0" layoutY="49.0" mnemonicParsing="false" onAction="#loadPlaylistButtonAction" prefHeight="32.0" prefWidth="92.0" text="Load Playlist" />
+                  <Button fx:id="playButton" layoutX="4.0" layoutY="47.0" mnemonicParsing="false" onAction="#playButtonAction" prefHeight="35.0" prefWidth="150.0" text="Play Playlist" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" collapsible="false" prefHeight="298.0" prefWidth="328.0" text="Comments" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.rowSpan="3">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="commentTextBox" layoutX="2.0" layoutY="7.0" prefHeight="259.0" prefWidth="152.0" promptText="Write comment here.." wrapText="true" />
+                  <Button fx:id="addCommentToSelectedButton" layoutX="161.0" layoutY="7.0" mnemonicParsing="false" onAction="#addCommentToSelectedButtonAction" prefHeight="61.0" prefWidth="160.0" text="Add Comment To Selected" textAlignment="CENTER" wrapText="true" />
+                  <Button fx:id="editSelectedCommentButton" layoutX="161.0" layoutY="109.0" mnemonicParsing="false" onAction="#editSelectedCommentButtonAction" prefHeight="61.0" prefWidth="159.0" text="Edit Selected Comment" />
+                  <Button fx:id="deleteCommentFromSelectedButton" layoutX="160.0" layoutY="208.0" mnemonicParsing="false" onAction="#deleteCommentFromSelectedButtonAction" prefHeight="57.0" prefWidth="160.0" text="Delete Comment From Selected" textAlignment="CENTER" wrapText="true" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" collapsible="false" text="Categories" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="categoryDropDown" layoutX="1.0" layoutY="1.0" prefHeight="34.0" prefWidth="148.0" promptText="Category Name" />
+                  <Button fx:id="addSelectedToCategoryButton" layoutX="150.0" layoutY="1.0" mnemonicParsing="false" onAction="#addSelectedToCategoryButtonAction" prefHeight="34.0" prefWidth="174.0" scaleZ="6.0" text="Add Selected To Catgory" />
+                  <Button fx:id="deleteSelectedFromCategory" layoutX="150.0" layoutY="36.0" mnemonicParsing="false" onAction="#deleteSelectedFromCategoryAction" prefHeight="35.0" prefWidth="174.0" text="Delete From Category" />
+                  <Button fx:id="addCategory" graphicTextGap="0.0" layoutX="-8.0" layoutY="36.0" minWidth="19.0" mnemonicParsing="false" onAction="#addCategoryAction" prefHeight="35.0" prefWidth="166.0" scaleX="0.89" text="New Category" wrapText="true" />
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <HBox prefHeight="13.0" prefWidth="328.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="openDirectoryButton" accessibleRoleDescription="ry" onAction="#openDirectoryButtonAction" prefHeight="32.0" prefWidth="112.0" text="Open Directory">
+               <HBox.margin>
+                  <Insets top="7.0" />
+               </HBox.margin>
+            </Button>
+            <TextField fx:id="openDirectoryTextBox" editable="false" prefHeight="33.0" prefWidth="218.0">
+               <HBox.margin>
+                  <Insets top="7.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <TableView fx:id="mediaContentTable" editable="true" prefHeight="371.0" prefWidth="736.0" GridPane.columnIndex="3" GridPane.hgrow="NEVER" GridPane.rowIndex="2" GridPane.rowSpan="4" GridPane.vgrow="NEVER">
+        <columns>
+          <TableColumn fx:id="nameTableColumn" prefWidth="495.0" text="Name" />
+            <TableColumn fx:id="typeTableColumn" prefWidth="105.0" text="Type" />
+            <TableColumn fx:id="categoryColumnTable" minWidth="0.0" prefWidth="134.0" text="Category" />
+        </columns>
+      </TableView>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="736.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="loadButton" layoutX="658.0" layoutY="6.0" mnemonicParsing="false" onAction="#loadButtonAction" prefHeight="32.0" prefWidth="78.0" text="Load" />
+            <Button fx:id="saveAsButton" layoutX="578.0" layoutY="6.0" mnemonicParsing="false" onAction="#saveAsButtonAction" prefHeight="32.0" prefWidth="75.0" text="Save as" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
